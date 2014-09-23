@@ -6,11 +6,9 @@ Please fork, copy, modify, delete, share or do whatever you like with this.
 
 All contributions are welcome!
 
-
 ## Requirements
 
-
-**A brief explanation to the requriements** (feel free to skip this if you're a pro):
+**A brief explanation to the requirements** (feel free to skip this if you're a pro):
 
 Back in the days we wrote all styles in the style.css file. Then we realized that this could quickly create clutter and confusion, especially in larger projects. Foundation uses SASS (equivalent to LESS, used in Bootstrap). In short, SASS is a CSS pre-processor that allows you to write styles more effectively and tidy. 
 
@@ -48,7 +46,6 @@ Check for Foundation Updates? Run:
 `foundation update` 
 (this requires the foundation gem to be installed in order to work. Please see the [docs](http://foundation.zurb.com/docs/sass.html) for details.)
 
-
 ### Stylesheet Folder Structure
 
   * `style.css`: Do not worry about this file. (For some reason) it's required by WordPress. All styling are handled in the Sass files described below
@@ -66,6 +63,7 @@ Check for Foundation Updates? Run:
 ### Script Folder Strucutre
   
   * `bower_components/`: This is the source folder where all Foundation scripts are located. `foundation update` will check and update scripts in this folder
+  * `js/custom`: This is where you put all your custom scripts. Every .js file you put in this directory will be minified and concatinated to [app.js](https://github.com/olefredrik/FoundationPress/blob/master/js/app.js)
   * `js/`: jQuery, Modernizr and Foundation scripts are copied from `bower_components/` to this directory, where they are minified and concatinated and enqueued in WordPress
   * Please note that you must run `grunt` in your terminal for the scripts to be copied. See [Gruntfile.js](https://github.com/olefredrik/FoundationPress/blob/master/Gruntfile.js) for details
 
@@ -75,6 +73,19 @@ Check for Foundation Updates? Run:
 * [FoundationPress Kitchen Sink - see every single element in action](http://foundationpress.olefredrik.com/kitchen-sink/)
 * [FoundationPSD - Photoshop template for Foundation](http://foundationpress.olefredrik.com/downloads/foundation-psd-template/)
 
+## Examples of sites built using FoundationPress
+
+* [Harvard Center for Green Buildings and Cities](http://www.harvardcgbc.org/)
+* [Parent-Child Home Program](http://www.parent-child.org/)
+* [Arch Design](http://archdesign.grafique.cz/)
+* [Hip and Healthy](http://hipandhealthy.com)
+* [Thinx Underwear](http://www.shethinx.com/)
+* [Threadbird blog](http://blog.threadbird.com/)
+* [Code Cub](http://www.thecodecub.com/)
+* [Public House Wines](http://publichousewines.hstestsite.info/)
+* [Bristol Doors Open Day 2014](http://www.bristoldoorsopenday.org/)
+* [Franchise Career Advisors](http://franchisecareeradvisors.com)
+
 ## Contributing
 #### Here are ways to get involved:
 
@@ -83,7 +94,6 @@ Check for Foundation Updates? Run:
 3. Report a bug that you find
 4. Share a theme you've built on top of FoundationPress
 5. [Tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffoundationpress.olefredrik.com%2F&text=Check%20out%20FoundationPress%2C%20the%20ultimate%20%23WordPress%20starter-theme%20built%20on%20%23Foundation%205&tw_p=tweetbutton&url=http%3A%2F%2Ffoundationpress.olefredrik.com&via=olefredrik) and [blog](http://www.justinfriebel.com/my-first-experience-with-foundationpress-a-wordpress-starter-theme-106/) about the advantages (and criticisms) of FoundationPress
-
 
 #### Pull Requests
 
@@ -97,3 +107,9 @@ Pull requests are highly appreciated. About a dozen people have written parts of
 
 * [Zurb Foundation Docs](http://foundation.zurb.com/docs/)
 * [WordPress Codex](http://codex.wordpress.org/)
+
+## Tutorials
+
+* [Build a responsive WordPress theme](http://www.webdesignermag.co.uk/tutorials/build-a-responsive-wordpress-theme/)
+* [Setting Up a Blog with Foundation and WordPress](http://www.thecodecub.com/htmlcss/setting-up-a-blog-with-foundation-and-wordpress/)
+
