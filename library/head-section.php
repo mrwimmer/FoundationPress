@@ -33,7 +33,12 @@ if (!function_exists('FoundationPress_icon_links')) :
 		echo '<link rel="icon" href="' . $directory . 'favicon.ico" type="image/x-icon">';
 		foreach ($icon_sizes as $size) {
 			$link = '<link rel="apple-touch-icon-precomposed" sizes="' . $size;
-			$link .= '" href="' . $directory . 'apple-touch-icon-' . $size . '-precomposed.png">';
+			$link .= '" href="' . $directory . 'apple-touch-icon-' . $size;
+			if ($size == '') {
+				$link .= 'precomposed.png">';
+			} else {
+				$link .= '-precomposed.png">';
+			}
 			echo $link;
 		}
 	}
