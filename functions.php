@@ -20,6 +20,9 @@ require_once('library/menu-walker.php');
 // Create widget areas in sidebar and footer
 require_once('library/widget-areas.php');
 
+// Functions to clean up header.php
+require_once('library/head-section.php');
+
 // Return entry meta information for posts
 require_once('library/entry-meta.php');
 
